@@ -32,7 +32,7 @@ import org.springframework.web.servlet.view.JstlView;
 		@Bean
 		public DataSource dataSource(){
 			DriverManagerDataSource dataSource = new DriverManagerDataSource();
-			dataSource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
+			dataSource.setUrl("jdbc:oracle:thin:@192.168.1.69:1521:xe");
 			dataSource.setDriverClassName("oracle.jdbc.OracleDriver");
 			dataSource.setUsername("scott");
 			dataSource.setPassword("TIGER");
